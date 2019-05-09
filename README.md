@@ -1,0 +1,1 @@
+Hey there! We are a group of dog lovers who are trying to create a website, game and application for people who have no one to leave their pets with, during their longer absence (for example long working days or vacation). The goal of the app is to find a person who will take care of the doggo and make him feel safe and happy.

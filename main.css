@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  width: auto;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  
+  
+}
+h2.header {
+  text-shadow: 2px 2px 8px black;
+}
+a {
+  text-decoration: none;
+  color: #f36f5a;
+}
+
+.page {
+  
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1199 px){
+  .page {
+    width: 1200px;
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+}
+
+.header, h2, h4, a {
+  font-family: "Chango", cursive;
+  font-weight: normal;
+}
+
+
+.logo {
+  padding-top: 1rem;
+  color: #f36f5a;
+  font-family: "Chango", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 0.9rem;
+}
+
+.logo img {
+  height: 2.6rem;
+  vertical-align: baseline;
+}
+
+.intro .page {
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation .page {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  z-index: 900;
+  height: vw;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu a {
+  padding: 2.1rem 1rem;
+  font-family: "Chango", cursive;
+}
+label {
+  display: none;
+}
+#toggle {
+  display: none;
+}
+.copyright  {
+background: #f36f5a;
+color: black;
+}
+
+
+
+.intro .page {
+  background: url(img/dog-background-cleaned.jpg) right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.call-to-action {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.sign-up-button {
+  display: inline-block;
+  background: #f36f5a;
+  padding: 1rem 3rem;
+  margin-right: 2rem;
+  color: white;
+  border-radius: 1rem;
+  font-family: "Chango", cursive;
+  text-transform: uppercase;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.features-background {
+  background: #f36f5a;
+  color: white;
+  padding: 50px 0;
+}
+
+.features-container {
+  text-align: center;
+}
+
+.features-container h2 {
+  font-size: 2rem;
+}
+
+.features {
+  margin: 0;
+  padding: 0;
+  display: flex;
+ 
+  justify-content: stretch;
+}
+
+.features li {
+  list-style: none outside none;
+  margin: 0;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 2rem;
+  color: #f36f5a;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.team {
+  background-color: white;
+
+  color: #f36f5a;
+  font-weight: medium;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 100px;
+  
+}
+
+.team h2 {
+  
+  font-size: 40px;
+  font-weight: 999;
+  text-transform: uppercase;
+  padding: 40px 0px 30px 0px;
+}
+
+.user {
+  display: block;
+  margin: 20px auto;
+}
+
+.user:not(:last-of-type) {
+  border-bottom: #dddddd 2px solid;
+}
+
+.user>img {
+  width: 50%;
+}
+
+.user>a>img {
+  margin: 10px 5px;
+  opacity: 1;
+  transition: 0.3s;
+  width: 50px; 
+}
+
+
+.user>a>img:hover {
+  opacity: 0.5;
+}
+
+.user h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px){
+  .features {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features li {
+    list-style: none outside none;
+    margin: 0;
+    width: 40%;
+    margin: 2rem 0;
+    padding: 2rem;
+    color: #f36f5a;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .page {
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  
+}
+
+@media screen and (min-width: 1199 px){
+
+  .features {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features li {
+    list-style: none outside none;
+    margin: 0;
+    width: 40%;
+    margin: 2rem 0;
+    padding: 2rem;
+    color: #f36f5a;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .photocontainer ul {
+    list-style: none outside none;
+  }
+
+}
+
+.features i {
+  position: relative;
+  top: -4rem;
+  font-size: 3rem;
+  margin: 0 auto -5rem;
+  background: white;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.subscription-container {
+  background: url(img/happy-dog.jpg) no-repeat center top;
+}
+
+.subscription-container .page {
+  min-height: 80vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-container .content {
+  /* background: #f36f5a; */
+  /* padding: 3rem; */
+  text-align: center;
+  color: white;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.subscription-container form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-container label {
+  font-size: 2rem;
+}
+
+.subscription-container input {
+  padding: 1rem 2rem;
+  border: 0;
+  /* width: 300px; */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subscription-container button {
+  font-size: 1rem;
+  background: white;
+  border: 0;
+  /* padding: 0 2rem; */
+  cursor: pointer;
+  font-family: "Chango", cursive;
+}
+
+.paw-container img {
+  height: 2rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .intro-content {
+    margin-top: 80px;
+  }
+
+  .main-menu {
+  flex-direction: column;
+  background: #f36f5a;
+  text-align: center;
+  border: 1px solid white;
+  }
+  .main-menu a {
+    display:  none;
+    border: 1px solid white;
+    
+    color: white;
+    font-size: 10vw;
+  }nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   flex-wrap: nowrap;
+ } 
+ 
+ .main-menu:hover > .a {
+   display: block;
+ }
+  
+
+  .intro .page {
+    background: white;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: stretch;
+  }
+ .navigation .page {
+   padding-bottom: 5%;
+ }
+
+ label{
+   font-size: 50px;
+   display: block;
+   z-index: 90;
+   color: #f36f5a;
+ }
+  #toggle:checked + .main-menu a {
+  display: block;
+  }
+
+  .copyright {
+    width: 90vw;
+  }
+
+   
+  
+  
+}
+
+
+@media(min-width: 610px) {
+
+  .team {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .team h2 {
+      width: 100%;
+  }
+
+  .user {
+      width:40%;
+      display: inline-block;
+      margin: 20px auto;
+  }
+
+  .user:not(:last-of-type) {
+      border-bottom: none;
+  }
+  
+  .user>img {
+      width: 50%;
+  }
+
+  
+}

@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    /* background-color: #3c8b00; */
+    background-image: url('b4.jpg');
+    background-size: contain;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    font-size: 30px;
+    font-family: 'Chango';
+    overflow: hidden;
+    user-select: none;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr; */
+    height: 85vh; 
+    overflow: hidden;
+    cursor: url(homezoopointer.png), auto;
+}
+.wrapper {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.instructions {
+    color: white;
+    font-family: 'Chango';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44vw;
+    justify-content: space-evenly
+}
+.rules{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-50%, -50%);
+     background: linear-gradient(45deg, rgba(245, 241, 210, 0.3) 0%, rgba(223, 219, 195, 0.66) 52%, rgb(79, 165, 82) 100%);
+    color: green;
+    width: 45vw;
+    height: 90vh;
+    border-radius: 10%;
+    position: absolute;
+    left: 100%;
+    width: 45vw;
+    height: 90vh;
+    border-radius: 10%;
+    border: 2px solid #005239;
+    padding-top: 80px;
+    padding-left: 50px;
+    top: 5%;
+    text-align: left;
+}
+
+.rulesVisible{
+    transform: translateY(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    left: 7%;
+    top: 5%;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgba(245, 241, 210, 0.3) 0%, rgba(223, 219, 195, 0.66) 52%, rgb(79, 165, 82) 100%);
+    color: #3b6549;
+    width: 45vw;
+    height: 90vh;
+    border-radius: 10%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-shadow: 2px 2px 4px white;
+}
+.rules p{
+    padding-top: 40px;
+    z-index: 10002;
+}
+.rules h1{
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.rules p {
+    text-align: left;
+}
+
+.instructions button {
+    text-align: center;
+    background: #4aaa00;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    border-radius: 1rem;
+    font-family: "Chango", Chango;
+    text-transform: uppercase;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px black;
+    width: 200px;
+    font-size: 15px;
+    border: #3b6549;
+}
+.instructionsGameRules:hover{
+  transform: scale(1.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.backToSite:hover{
+ transform: scale(1.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+/* LEADERBOARD */
+    .userName {
+        text-align: center;
+    }
+.userInputName{
+    font-size: 15px;
+    color: #323232;
+    padding: 10px 0 5px 0;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #afcc7a;
+    width: 120px;
+}
+    .close{
+    position: absolute;
+    right: 3%;
+    top: 8px;
+    cursor: pointer;
+    }
+    .nameButton {   
+    text-align: center;
+    background: #74b456;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 1rem;
+    font-family: "Chango", cursive;
+    text-transform: uppercase;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 2px 1px 1px #006344;
+    width: 200px;
+    font-size: 15px;
+    text-shadow: 1px 2px 1px #000000;
+    }
+.nameButton:hover{
+    transform: scale(1.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+    .rankingWrapper{
+        position: absolute;
+        left: -1000%;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        font-family: 'Chango';
+        font-size: 26px;
+}
+
+.rankingVisible{
+        transition: all 3s ease-in-out;
+        left: 0%;
+        z-index: 10001;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('rightdoor.png');
+        background-size: cover;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+.rankingA
+{
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+.top3{
+    color: white;
+    text-shadow: 2px 2px 4px #005239;
+    font-size: 33px;
+}
+.oops {
+    font-size: 40px;
+}
+.userInput{
+    margin-bottom: 20px;
+}
+    table{
+        border-color: #005239;
+        color:white;
+        border-spacing: 0;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: 2px 2px 4px black;
+        font-size: 30px;
+      }
+      
+      tr:first-child{
+        background-color: #91b751;
+          color: #005239;
+          text-shadow: 2px 1px 2px white;
+      }
+      
+      tr:nth-child(2) > td{
+        border-top-width: 0;
+      }
+      
+      tr{
+        background-color: #006344;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      
+      th, td{
+        margin: 0;
+        padding: .5em 1.5em;
+        text-align: center;
+        border-width: 1px 0;
+        border-color: #005239;
+        border-style: solid;
+      }
+      
+      th:nth-child(even){
+        border-width: 0px px;
+        border-color: #005239;
+        border-style: solid;
+      }
+ th{
+        border-bottom-width: 1px;
+        border-top-width: 0px;
+      }
+      
+      
+      td:nth-child(even){
+        border-width: 1px 2px;
+        border-color: #005239;
+        border-style: solid;
+      }
+.playbutton {
+    height: 35vh;
+    width: 23vw;
+    background-size: contain;
+    cursor: pointer;
+    background: url(playbutton.png) no-repeat center;
+    background-size: contain;
+    bottom: 40vh;
+    left: 32.5vw;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 1.5s ease-in-out;
+    z-index: 1000;
+}
+.leftdoor {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    background: url(leftdoor.png) no-repeat center;
+    left: 0;
+    position: absolute;
+    background-color: #3f8807;
+    transition: all 1.5s ease-in-out;
+    z-index: 500;
+}
+.rightdoor {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    position: absolute;
+    background: url(rightdoor.png) no-repeat center;
+    left: 50vw;
+    flex: 1 1 0;
+    background-color: #2c5c07;
+    transition: all 1.5s ease-in-out;
+    z-index: 500;
+}
+
+.header {
+    height: 15vh;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Chango', cursive;
+    color : white;
+}
+.header h1 { 
+    text-shadow: 0 0 7px black;
+    font-size: 3vw;
+    color: white;
+    transition: opacity 4s ease-in-out;
+    position: relative;
+}
+.header h2 {
+    text-shadow: 0 0 7px black;
+    
+    font-family: 'Lato';
+    font-size: 10vh;
+    font-weight: 600;
+}
+ /* .box1{
+    right: -3%;
+ }
+ .box3{
+     left: -3%;
+ }
+ .box4{
+     right: -3%;
+    }
+ .box6{
+    left: -3%;
+ } */
+
+
+
+.box {
+    background: url(bush2.png)  no-repeat bottom center;
+    width: 33vw;
+    height: 16vw;
+    background-position: bottom ;    
+    background-size: 90% 67%;
+    position: relative;
+    bottom: -5%;
+    cursor: url(homezoopointer.png), auto;
+ }
+ .cat {
+    background: url(big-2024026_640.png) no-repeat  bottom center;
+    position: absolute;
+    width:  33vw;
+    height: 33vw;
+    bottom: 7%;    
+    left: -6%;
+    background-size: 37% 33%;
+    z-index: -1;
+    transition: bottom 1s ease-in-out;
+    cursor: url(paw2.png), auto;
+    overflow: hidden;
+ }
+.cat.badCat {
+    background-image: url(badcat.png);
+}
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.score {
+    font-size: 8vw;
+    text-align: center;
+    color: white;
+   
+}
+.up {
+    bottom: 37%;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(12px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-8px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(8px, 0, 0);
+    }
+}
+.timeRunningOut {
+    
+    animation-duration: 1s;
+    animation-name: blink2; 
+    animation-iteration-count: infinite;
+}
+@keyframes blink2 {
+    0% {
+        box-shadow:         inset -6px -10px 50px 44px  red;
+    }
+    
+    50% {
+        box-shadow:         inset -6px -10px 50px 44px  #000000;
+}
+    
+    100% {
+        box-shadow:         inset 6px -10px 50px 44px  red;
+    
+    }
+  }
+  .header__time {
+    
+      top: 20px;
+      right: 40px;
+  }
+.timeRunningOut .header__time {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    font-size: 10vh;
+}
+.gameOver .header__time {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40vh;
+    text-align: center;
+    z-index: 80;
+}
+@keyframes blink {
+    0% {
+        color: black;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 500px) and ( min-height: 600px){
+
+
+    body {
+        background-color: #3c8b00;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        user-select: none;
+    }
+
+    .game {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 78vh; 
+        cursor: url(paw2.png), auto;
+    }
+
+    .box{
+        background: url(bush.png)  no-repeat bottom center;
+        Left: 10%;
+        width: 33vw;
+        height: 20vw;
+        background-position: bottom ;    
+        background-size: 110% 87%;
+        position: relative;
+        bottom: -15%;
+        cursor: url(paw2.png), auto;
+    }
+
+    .cat {
+        background: url(big-2024026_640.png) no-repeat  bottom center;
+        position: absolute;
+        width:  33vw;
+        height: 33vw;
+        bottom: 8%;    
+        left: -6%;
+        background-size: 47% 43%;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+        cursor: url(paw2.png), auto;
+    }
+
+    .score {
+        font-size: 10vw;
+        text-align: center;
+        color: white;
+       
+    }
+
+     .up {
+        bottom: 48%;
+    }
+
+    .timeRunningOut .header__time {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    font-size: 10vh;
+    }
+}
